@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/img/favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid ">
+            <div class="sub-nav row justify-content-end">
+                <div class="col-1 subnav-icon">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <sup>5</sup>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <sup>2</sup>
+                    </a>
+                </div>
+                <div class="col-2 subnav-logout">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>
+                        <span id="logout">Đăng xuất</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid content">
+            <div class="row">
+                <div class="col-xl-2 sidebar p-0">
+                    <div class="user-group">
+                        <div class="user-info">
+                            <div class="user-avt">
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <div class="user-name">
+                                    <p>quoc toan</p>
+                                    <!-- <img src="../img/favicon.svg" alt=""> -->
+                                </div>
+                                <div class="user-rank">
+                                    <span>Thành viên đồng</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cash">
+                            <div>
+                                <i class="fa-solid fa-money-bill"></i>
+                                <span>Số dư</span>
+                            </div>
+                            <div>
+                                <span>0đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="siderbar-items">
+                        <ul>
+                            <li class="sidebar-list active">
+                                <i class="fa-solid fa-table-cells-large"></i>
+                                <span>Dashboard</span>
+                            </li>
+                            <li class="sidebar-list">
+                                <i class="fa-regular fa-square-plus"></i>
+                                <span>Khởi tạo</span>
+                            </li>
+                            <li class="sidebar-list">
+                                <i class="fa-regular fa-rectangle-list"></i>
+                                <span>Danh sách đơn hàng</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            Cá nhân
+                            <li class="sidebar-list">
+                                <i class="fa-regular fa-user"></i>
+                                <span>Quản lý tài khoản</span>
+                            </li>
+                            <li class="sidebar-list">
+                                <i class="fa-solid fa-wallet"></i>
+                                <span>Ví Napte 247</span>
+                            </li>
+
+                        </ul>
+                        <ul>
+                            Tải ứng dụng
+                            <li>
+                                <i class="fa-regular fa-font-awesome"></i>
+                                <span>Liên hệ</span>
+                            </li>
+                            <li id="home-btn">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Trang ngoài</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sidebar-footer">
+                        <ul class="col-xl-2 sidebar-footer-fvc">
+                            <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+                            <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                            <li><a href="#"></a><i class="fa-brands fa-tiktok"></i></li>
+                            <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+                        </ul>
+                        <div>
+                            <p>Thời gian làm việc
+                                <span>Văn phòng: 08:00 - 17:30 (T2 - T7) </span>
+                                <span>Hậu cần: 09:00 - 21:00 (T2 - CN) </span>
+                            </p>
+                            <p>Hotline: <a href="tel:0375196964">0375.196.964</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-7">
+                    <div class="dashboard tab-dashboard active">
+                        
+                        <h3><span>Tài chính</span></h3>
+                        <div class="dashboard-item">
+                            <div class="taichinh">
+                                <div class="taichinh-wallet">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <span>Số dư ví</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div>
+                                    <p>0
+                                        <sup>đ</sup>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="giaodich">
+                                <div class="naptien">
+                                    <a href="#" >
+                                        <span><i class="fa-solid fa-plus"></i></span>
+                                        Nạp  tiền
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                        Lịch sử giao dịch
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3><span>Đơn hàng</span></h3>
+                        <div class="dashboard-dh active">
+                            <div  class="dh-nav">
+                                <div >
+                                    <i class="fa-solid fa-box"></i>
+                                    <span>Thống kế đơn hàng</span>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="dropdown m-1">
+                                        <a class="btn btn-secondary dropdown-toggle fs-4 " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Tất cả dịch vụ
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown m-1">
+                                        <a class="btn btn-secondary dropdown-toggle fs-4 " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Hôm nay
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <!-- <div class="chart-container" style="position: relative; height:360px; width:360px; margin: 0 auto;">
+                                    <canvas id="myChart" ></canvas>
+                                  </div> -->
+                                  <div>
+                                    <p style="font-size: 20px; text-align: center; margin-top: 60px; margin-bottom: 60px;">Bạn chưa có đơn hàng nào</p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhtoan tab-dashboard ">
+                        <h2>
+                            Tạo yêu cầu thanh toán
+                        </h2>
+                        <div>
+                            <p>Lưu ý:</p>
+                            <p>Yêu cầu không đúng thực tế, yêu cầu sẽ bị hủy và hoàn tiền.</p>
+                            <p>Gom nhiều thanh toán vào chung một yêu cầu để hưởng tỉ giá tốt hơn</p>
+                        </div>
+                        <div class="thanhtoan-content">
+                            <div>
+                                <i class="fa-solid fa-wallet"></i>
+                                <label for="te">Nhập số tệ <sup>*</sup>
+                                    <div>
+                                        <input type="text" name="te" id="inputTe" placeholder="Nhập số tệ">
+                                    </div>
+                                </label>
+                                <label for="">Chọn hình thức<sup>*</sup>
+                                    <div class="dropdown">
+                                        <!-- <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          thanhtoan
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul> -->
+                                        <select name="taodon" id="taodon"> 
+                                            <option value="thanhtoanho">Ủy quyền thanh toán hộ</option>
+                                            <option value="alipayvietnam">Alipay Việt Nam</option>
+                                            <option value="alipaytrung">Alipay Trung</option>
+                                            <option value="chuyenkhoanthe">Chuyển khoản thẻ</option>
+                                            <option value="wechat">Wechat</option>
+                                        </select>
+                                      </div>
+                                </label>
+                            </div>
+                            <div class="ali-input">
+                                <label for="">Điền nội dụng giao dịch<sup>*</sup>
+                                    <div><input type="text" id="inputTtgd" placeholder="Nhập thông tin"></div>
+                                </label>
+                                <label for="">Ghi chú cho Napte247
+                                    <div><input type="text" id="inputNote" placeholder="Ghi chú cho Napte247"></div>
+                                </label>
+                                <label enctype="multipart/form-data" method="post" action="">Hình ảnh Qr Code
+                                    
+                                        
+                                    <div><input type="file" accept=".png, .jpg" onchange="xulyfile()" >
+                                        <br><img src="" id="hinh"></div>
+                                     
+                                </label>
+                            </div>
+                        </div>
+                        <button class="yeucau-btn">
+                            <span>
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            Thêm yêu cầu
+                        </button>
+                        <div  class="tigia">
+                            <div>
+                                <div>
+                                    <p>Tổng số tệ thanh toán</p>
+                                    <p>lorem</p>
+                                </div>
+                                <div>
+                                    <p>Tỷ giá áp dụng</p>
+                                    <p>lorem</p>
+                                </div>
+                                <div>
+                                    <p>Thành tiền</p>
+                                    <p>lorem</p>
+                                </div>
+                            </div>
+                            <button onclick="taodon()">Gửi Yêu cầu ></button>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- <div class="thanhtoan ali tab-dashboard ">
+                        <h2>
+                            Tạo yêu cầu thanh toán
+                        </h2>
+                        <div>
+                            <p>Lưu ý:</p>
+                            <p>Yêu cầu không đúng thực tế, yêu cầu sẽ bị hủy và hoàn tiền.</p>
+                            <p>Gom nhiều thanh toán vào chung một yêu cầu để hưởng tỉ giá tốt hơn</p>
+                        </div>
+                        <div class="thanhtoan-content">
+                            <div>
+                                <i class="fa-solid fa-wallet"></i>
+                                <label for="te">Nhập số tệ <sup>*</sup>
+                                    <div>
+                                        <input type="text" name="te" placeholder="Nhập số tệ">
+                                    </div>
+                                </label>
+                                <label for="">Chọn hình thức<sup>*</sup>
+                                    <div class="dropdown">
+                                        <select name="taodon" id="taodon"> 
+                                            <option value="thanhtoanho">Ủy quyền thanh toán hộ</option>
+                                            <option value="alipayvietnam">Alipay Việt Nam</option>
+                                            <option value="alipaytrung">Alipay Trung</option>
+                                            <option value="chuyenkhoanthe">Chuyển khoản thẻ</option>
+                                            <option value="wechat">Wechat</option>
+                                        </select>
+                                      </div>
+                                </label>
+                            </div>
+                            <div class="ali-input">
+                                <label for="">
+                                    <label for="">Chọn Email Napte 247
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Email
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </div>
+                                    </label>
+                                    <label for="te">Nhập số đơn hàng<sup>*</sup>
+                                        <div>
+                                            <input type="text" name="te" placeholder="Nhập số đơn hàng">
+                                        </div>
+                                    </label>
+                                    
+                                </label>
+                                <label for="">Ghi chú cho Napte247
+                                    <div><input type="text" placeholder="Ghi chú cho Napte247"></div>
+                                </label>
+                                <label enctype="multipart/form-data" method="post" action="">Hình ảnh Qr Code
+                                    
+                                        
+                                    <div><input type="file" accept=".png, .jpg" onchange="xulyfile()" >
+                                        <br><img src="" id="hinh"></div>
+                                     
+                                </label>
+                            </div>
+                        </div>
+                        <button class="yeucau-btn">
+                            <span>
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            Thêm yêu cầu
+                        </button>
+                        <div  class="tigia">
+                            <div>
+                                <div>
+                                    <p>Tổng số tệ thanh toán</p>
+                                    <p>lorem</p>
+                                </div>
+                                <div>
+                                    <p>Tỷ giá áp dụng</p>
+                                    <p>lorem</p>
+                                </div>
+                                <div>
+                                    <p>Thành tiền</p>
+                                    <p>lorem</p>
+                                </div>
+                            </div>
+                            <button>Gửi Yêu cầu ></button>
+                        </div>
+                    </div> -->
+
+                    <div  class="thanhToanHo tab-dashboard">
+                        <div class="thanhtoanho-item">
+                            <h2>
+                                <i class="fa-solid fa-file-invoice"></i>
+                                Thanh toán hộ
+                            </h2>
+                            <div class="tth">
+                                <p>Tìm kiếm</p>
+                                <div class="tth-input">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text"  placeholder="Tìm kiếm theo">
+                                </div>
+                            </div>
+                            <div class="tth tth-selec">
+                                <div >
+                                    <div>
+                                        <p>Thời gian</p>
+                                    <div class="tth-date">
+                                        <input type="date">
+                                        <input type="date">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Trạng thái</p>
+                                    <div class="dropdown tth-dd">
+                                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Tất cả
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="tth-btn">
+                                    <p class="mb-4">Tìm kiếm</p>
+                                    <a href="#">Tìm kiếm</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="thanhtoanho-item">
+                            <div class="ttdh">
+                                <div>
+                                    <i class="fa-solid fa-gears"></i>
+                                    <span>TTH814</span>
+                                    <button>Chờ xử lý</button>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                            <div class="ttdh">
+                                <div>
+                                    <p>Ngày tạo</p>
+                                    <p>02.8.2023</p>
+                                </div>
+                                <div>
+                                    <p>Tổng giá trị(¥)</p>
+                                    <p>10.00</p>
+                                </div>
+                                <div>
+                                    <p>Tỉ giá áp dụng</p>
+                                    <p>3487.00</p>
+                                </div>
+                                <div>
+                                    <p>Tổng thanh toán (vnđ)</p>
+                                    <p>34.870đ</p>
+                                </div>
+                                <div>
+                                    <p>Loại hình thức</p>
+                                    <p>Ủy quyền thanh toán hộ</p>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-regular fa-file-excel"></i></a>
+                                    <a href="#"><i class="fa-regular fa-copy"></i></a>
+                                    <a href="#"><i class="fa-regular fa-flag"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="huy">Hủy đơn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtoanho-item">
+                            <div class="ttdh">
+                                <div>
+                                    <i class="fa-solid fa-gears"></i>
+                                    <span>TTH814</span>
+                                    <button>Chờ xử lý</button>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                            <div class="ttdh">
+                                <div>
+                                    <p>Ngày tạo</p>
+                                    <p>02.8.2023</p>
+                                </div>
+                                <div>
+                                    <p>Tổng giá trị(¥)</p>
+                                    <p>10.00</p>
+                                </div>
+                                <div>
+                                    <p>Tỉ giá áp dụng</p>
+                                    <p>3487.00</p>
+                                </div>
+                                <div>
+                                    <p>Tổng thanh toán (vnđ)</p>
+                                    <p>34.870đ</p>
+                                </div>
+                                <div>
+                                    <p>Loại hình thức</p>
+                                    <p>Ủy quyền thanh toán hộ</p>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-regular fa-file-excel"></i></a>
+                                    <a href="#"><i class="fa-regular fa-copy"></i></a>
+                                    <a href="#"><i class="fa-regular fa-flag"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="huy">Hủy đơn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thanhtoanho-item">
+                            <div class="ttdh">
+                                <div>
+                                    <i class="fa-solid fa-gears"></i>
+                                    <span>TTH814</span>
+                                    <button>Chờ xử lý</button>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                            <div class="ttdh">
+                                <div>
+                                    <p>Ngày tạo</p>
+                                    <p>02.8.2023</p>
+                                </div>
+                                <div>
+                                    <p>Tổng giá trị(¥)</p>
+                                    <p>10.00</p>
+                                </div>
+                                <div>
+                                    <p>Tỉ giá áp dụng</p>
+                                    <p>3487.00</p>
+                                </div>
+                                <div>
+                                    <p>Tổng thanh toán (vnđ)</p>
+                                    <p>34.870đ</p>
+                                </div>
+                                <div>
+                                    <p>Loại hình thức</p>
+                                    <p>Ủy quyền thanh toán hộ</p>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fa-regular fa-file-excel"></i></a>
+                                    <a href="#"><i class="fa-regular fa-copy"></i></a>
+                                    <a href="#"><i class="fa-regular fa-flag"></i></a>
+                                </div>
+                                <div>
+                                    <a href="#" class="huy">Hủy đơn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thanhtoan tab-dashboard">
+                        <div class="tttk">
+                            <div>
+                                <img src="../../public/img/logo_napte247.svg" alt="">
+                            </div>
+                            <div>
+                                <h3>UserName</h3>
+                                <p>userRank</p>
+                            </div>
+                        </div>
+                        <ul class="taikhoan"> Thông tin tài khoản
+                            <li>
+                                <label for="">UserName</label>
+                                <div>
+                                    <span> User name</span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">Họ và tên</label>
+                                <div>
+                                    <span>Họ và tên</span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">Số điện thoại</label>
+                                <div>
+                                    <span>00000</span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">Email</label>
+                                <div>
+                                    <span>Email</span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">Kho nhận hàng</label>
+                                <div>
+                                    <span>kho nhận hàng</span>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="">Mật khẩu</label>
+                                <div>
+                                    <span>12312312</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="dashboard thanhtoan  tab-dashboard">
+                        <div class="dashboard-item">
+                            <div class="taichinh">
+                                <div class="taichinh-wallet">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <span>Số dư ví</span>
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+                                <div>
+                                    <p>0
+                                        <sup>đ</sup>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="giaodich">
+                                <div class="naptien">
+                                    <a href="#" >
+                                        <span><i class="fa-solid fa-plus"></i></span>
+                                        Nạp  tiền
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                        Lịch sử giao dịch
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div>
+                        <h2>Phương Thức Nạp Tiền</h2>
+                        <div>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="opacity: 0;">
+                                Launch demo modal
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Nạp tiền</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3" style="margin: 0 auto;">
+                                            <img src="../../public/img/qrck.jpg" alt="" style="width: 300px;margin: 0 50px;">
+                                          </div>
+                                          <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" style="border: none; font-size: 13px;" class="form-label">Nội dung chuyển khoản:</label>
+                                            <input type="text" value="khachhang 012345" style="border: none; font-size: 13px;">
+                                          </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Ok</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="ptnaptien">
+                            
+                            <li>
+                                <h4>Nạp tiền trực tiếp</h4>
+                                <p>
+                                    Khách hàng có thể nạp trực tiếp tại các chi nhánh của Napte247
+                                </p>
+                            </li>
+                            <li>
+                                <h4>CHI NHÁNH HÀ NỘI</h4>
+                                <p>
+                                    93 Hoàng Văn Thái, Thanh Xuân, Hà Nội
+                                    0375196964
+                                </p>
+                            </li>
+                            <li>
+                                <h4>CHI NHÁNH HỒ CHÍNH MINH</h4>
+                                <p>
+                                    20 Cộng Hòa, Phường 12, Q.Tân Bình, TP.Hồ Chín Minh
+                                    0375196964
+                                </p>
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Chuyển Khoản</h4>
+                                <p>
+                                    <span>Thông tin chuyển khoản</span>
+                                    Quý khách vui lòng ghi nội dung chuyển khoản theo cú pháp: username và ghi số điện thoại để được xử lý lệnh nhanh nhất. Trường hợp Quý khách ghi nội dung không đúng/không ghi nội dung, vui lòng gửi hình ảnh bill chuyển khoản cho chung tôi kiểm tra.
+                                </p>
+                                    <h4>Tài khoản thụ hưởng</h4>
+                                    <p>Ngân Hàng Thương Mại Cổ Phần Công Thương - Vietinbank</p>
+                                    <p>DAU VAN TRONG</p>
+                                    <p>0375196964</p>
+                                    <p>Nội dung chuyển khoản</p>
+                                </div>
+                                <div>
+                                    <img src="../../public/img/qrck.jpg" alt="">
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 sub-sidebar">
+                <div class="sub-sidebar-item">
+                    <div>
+                        <img src="../img/favicon.svg" alt="">
+                        <h3>Napte247 Update</h3>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle"></i>
+                        <p>Cập nhật lúc 15:08 02.08.2023</p>
+                    </div>
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                        Tra cứu email Napte247
+                    </a>
+                </div>
+                <div class="sub-sidebar-item sub-noti">
+                    <div class="sub-noti-title">
+                        <h3>Thông báo
+                            <span>3</span>
+                        </h3>
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                    aria-selected="true">Trạng thái</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                    aria-selected="false">Tin tức</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                                    aria-selected="false">Hệ thống</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-sidebar " id="myTabContent">
+                            <div class="fade show tab-sidebar  active" id="home" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <div class="tab-sidebar-content">
+                                    <div class="tab-sidebar-icon">
+                                        <i class="fa-solid fa-box"></i>
+                                    </div>
+                                    <div class="tab-sidebar-item">
+                                        <div class="tab-sidebar-item-title">
+                                            <p>#VCH1377 Đơn hàng mua hộ</p>
+                                            <span>23.07.2023</span>
+                                        </div>
+                                        <div class="tab-sidebar-item-content">
+                                            <p>[ĐƠN HÀNG] VCH10377 đã được lên đơn thành công</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-sidebar-content">
+                                    <div class="tab-sidebar-icon">
+                                        <i class="fa-solid fa-box"></i>
+                                    </div>
+                                    <div class="tab-sidebar-item">
+                                        <div class="tab-sidebar-item-title">
+                                            <p>#VCH1377 Đơn hàng mua hộ</p>
+                                            <span>23.07.2023</span>
+                                        </div>
+                                        <div class="tab-sidebar-item-content">
+                                            <p>[ĐƠN HÀNG] VCH10377 đã được lên đơn thành công</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
+                        </div>
+                        <div class=" fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...
+                        </div>
+                    </div>
+                    <a href="#" class="bg-transparent">Xem tất cả</a>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+            
+        </div>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../public/js/jquery/dist/jquery.js"></script>
+    <script src="../../public/js/dashboardJs.js"></script>
+
+    
+    
+
+</body>
+
+</html>

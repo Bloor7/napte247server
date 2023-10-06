@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+    
+        :root {
+            --main-color: rgb(26, 137, 24);
+        }
+    
+        body {
+            overflow: hidden;
+        }
+    
+        .main-logo {
+            width: 200px;
+            margin: 10px 0 0 100px;
+        }
+    
+        .container,
+        .form-confirm-align-dang-ky
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+    
+        div.container {
+            margin-top: 120px;
+        }
+    
+        .container .register-form {
+            display: block;
+        }
+    
+        
+        .container .register-form,
+        .container .sign-in-form
+        {
+            width: 36%;
+        }
+    
+        @media (max-width: 767.98px) {
+            .container .register-form,
+            .container .sign-in-form
+            {
+                width: 80%;
+            }
+        }
+    
+        .form-header {
+            margin-bottom: 20px;
+        }
+    
+        .main-text {
+            font-family: 'Cabin', sans-serif;
+            font-size: 50px;
+        }
+    
+        .text-main-color {
+            font-weight: 600;
+            color: var(--main-color);
+            text-decoration: none;
+        }
+    
+        .text-main-color:hover {
+            color: var(--main-color);
+            text-decoration: underline;
+        }
+    
+        .container .register-form .form-input-group input,
+        .container .sign-in-form .form-input-group input
+        {
+            margin: 0 0 20px 0;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #c6c6c6;
+            box-shadow: none;
+            padding-left: 15px;
+        }
+    
+        .container .register-form .form-input-group input:focus,
+        .container .sign-in-form .form-input-group input:focus
+        {
+            border-bottom-color: var(--main-color);
+        }
+    
+        .form-confirm-align {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    
+        .form-confirm-align-dang-nhap {
+            width: 100% !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        @media (max-width: 767.98px) {
+            .form-confirm-align-dang-nhap
+            {
+                width: 76%;
+            }
+        }
+    
+        .form-confirm-align-dang-ky input,
+        .form-confirm-align-dang-nhap input
+        {
+            margin: 3px 5px 0 0;
+            cursor: pointer;
+        }
+    
+        button.btn-validate,
+        button.btn-dang-nhap
+        {
+            margin-top: 18px;
+            padding: 6px 36px 6px 20px;
+            background-color: var(--main-color);
+            border: none;
+            border-radius: 50px;
+            font-size: 10px;
+            font-weight: 600;
+            color: #fff;
+        }
+    
+        .fa-angle-right {
+            position: absolute;
+            padding: 3.6px 0 0 9px;
+        }
+    
+        button.btn-validate:hover,
+        button.btn-dang-nhap:hover
+        {
+            background-color: var(--main-color);
+            color: #fff;
+            box-shadow: 0 0 12px var(--main-color);
+            scale: 110%;
+            padding: 6px 36px 8px 20px;
+            .fa-angle-right{
+                padding: 3.5px 0 0 9px;
+            }
+        }
+    
+        button.btn-validate:active,
+        button.btn-dang-nhap:active
+        {
+            background-color: #fff;
+            border: 2px solid var(--main-color);
+            color: var(--main-color);
+            box-shadow: 0 0 0px var(--main-color)!important;
+            border-color: #c6c6c6;
+        }
+    
+        button.btn-validate:focus,
+        button.btn-dang-nhap:focus
+        {
+            background-color: #fff;
+            border: 2px solid var(--main-color);
+            color: var(--main-color);
+            box-shadow: 0 0 0px var(--main-color);
+        }
+        
+        </style>
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row sign-in-form" id="sign-in-form">
+            <form class="needs-validation" novalidate>
+    
+                <div class="form-header">
+                    <h1 class="main-text">Đăng nhập</h1>
+                    <p>Bạn chưa có tài khoản ? <span class="text-main-color" style="cursor: pointer;" onclick="change1()">Đăng ký ngay</span></p>
+                </div>
+    
+                <div class="form-input-group">
+                    <div>
+                        <input class="form-control" type="text" id="idDnTendn" placeholder="Tên đăng nhập" required/>
+                    </div>
+                    <div>
+                        <input class="form-control" type="password" id="idDnMatkhau" placeholder="Mật khẩu" required/>
+                    </div>
+                </div>
+    
+                <div class="form-confirm-align-dang-nhap">
+                    <div class="form-confirm-align">
+                        <input type="radio" name="radio-confirm-dang-nhap" id="id-radio-confirm-dang-nhap" />
+                        <label for="id-radio-confirm-dang-nhap">
+                            Ghi nhớ tài khoản
+                        </label>
+                    </div>
+                    <a class="text-main-color" href="" target="_blank">Quên mật khẩu ?</a>
+                </div>
+    
+                <div>
+                    <button type="submit" class="btn btn-dang-nhap" onclick="login()">
+                        <div>
+                            Đăng nhập
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </button>
+                </div>
+    
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../public/js/jquery/dist/jquery.js"></script>
+    <script>
+        function change() {
+            var a = document.getElementById('register-form');
+            var b = document.getElementById('sign-in-form');
+            if (a.style.display = 'block') {
+                a.style.display = 'none';
+                b.style.display = 'block';
+            }
+        }
+        function change1() {
+            var a = document.getElementById('register-form');
+            var b = document.getElementById('sign-in-form');
+            if (b.style.display = 'block') {
+                b.style.display = 'none';
+                a.style.display = 'block';
+            }
+        }
+
+        // LỆNH FORM VALIDATION CỦA BOOTSTRAP
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+
+    </script>
+
+    <!-- Link Font Awesome(icon) -->
+    <script src="https://kit.fontawesome.com/70d344277b.js" crossorigin="anonymous"></script>
+
+    <!-- Link script Bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+        
+        function login() {
+            
+            // event.preventDefault()
+            $.ajax({
+            url:'/login',
+            type: 'POST',
+            data: {
+                username: $('#idDnTendn').val(),
+                password: $('#idDnMatkhau').val()
+                }
+            })
+            .then(data => {
+                console.log(data.title);
+            })
+            .catch(err => {
+                console.log('loi dang nhap',err);
+
+            })
+            
+        }
+    
+    </script>
+    
+</body>
+</html>

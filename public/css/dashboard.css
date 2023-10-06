@@ -1,0 +1,598 @@
+.content {
+  background-color: #ccc;
+}
+
+hr {
+  padding: 2px 0;
+  color: magenta;
+  margin: 5px 0;
+}
+
+.line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #732b2b;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.sub-nav {
+  height: 52px;
+}
+.sub-nav div {
+  line-height: 52px;
+}
+.sub-nav .subnav-icon {
+  font-weight: 500;
+}
+.sub-nav .subnav-icon a {
+  padding-left: 10px;
+}
+.sub-nav .subnav-logout a {
+  color: #fff;
+  padding: 3px 10px;
+  background-color: #5e3d92;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background-color: #5d5d5d;
+  font-size: 1.4rem;
+  height: 100vh;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sidebar .user-group {
+  background-color: #202124;
+  color: #fff;
+}
+.sidebar .user-group .user-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.sidebar .user-group .user-info .user-avt {
+  background: #FFF;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px 10px;
+}
+.sidebar .user-group .user-info .user-avt img {
+  width: 50px;
+  height: 50px;
+}
+.sidebar .user-group .user-info .user-name {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+  align-items: center;
+}
+.sidebar .user-group .user-info .user-name p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+.sidebar .user-group .user-info .user-name img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+.sidebar .user-group .user-info .user-rank {
+  font-size: 1.4rem;
+  margin-left: 20px;
+  color: #5e3d92;
+  font-weight: 500;
+}
+.sidebar .user-group .cash {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+}
+.sidebar .siderbar-items {
+  font-weight: 500;
+}
+.sidebar .siderbar-items ul {
+  font-size: 1.4rem;
+  color: #ccc;
+  margin: 5px 0 10px;
+}
+.sidebar .siderbar-items ul li {
+  color: #fff;
+  padding: 8px 16px;
+}
+.sidebar .siderbar-items ul li i {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  width: 30px;
+}
+.sidebar .siderbar-items ul li:hover {
+  background-color: #545454;
+}
+.sidebar .sidebar-footer {
+  border-top: 1px solid #bbb;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 500;
+}
+.sidebar .sidebar-footer a {
+  color: #fdb04c;
+}
+.sidebar .sidebar-footer .sidebar-footer-fvc {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.sidebar .sidebar-footer .sidebar-footer-fvc li i {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.sidebar .sidebar-footer .sidebar-footer-fvc li i:hover {
+  color: #fdb04c;
+  transform: scale(1.4);
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.dashboard {
+  width: 100%;
+  padding: 20px;
+  display: none;
+}
+.dashboard h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  color: #666;
+}
+.dashboard h3 span {
+  background: #ccc;
+  padding: 0 10px;
+}
+.dashboard .dashboard-item {
+  background-color: #fff;
+  background-image: url("https://cdn3.vectorstock.com/i/1000x1000/25/07/grey-triangle-background-or-flat-seamless-pattern-vector-2022507.jpg");
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.dashboard .dashboard-item .taichinh {
+  font-size: 1.8rem;
+}
+.dashboard .dashboard-item .taichinh .taichinh-wallet i {
+  color: #5e3d92;
+  margin: 5px;
+}
+.dashboard .dashboard-item .taichinh div p {
+  font-size: 3.2rem;
+  margin-top: 20px;
+  font-weight: 700;
+  color: #5e3d92;
+}
+.dashboard .dashboard-item .giaodich .naptien {
+  margin-bottom: 50px;
+  text-align: end;
+}
+.dashboard .dashboard-item .giaodich .naptien a {
+  background-color: #fdb04c;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.dashboard .dashboard-item .giaodich .naptien a span i {
+  border: 2px solid #5e3d92;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 1.4rem;
+}
+.dashboard .dashboard-dh {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.dashboard .dashboard-dh .dh-nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.dashboard .dashboard-dh .dh-nav i {
+  color: #5e3d92;
+}
+
+.thanhToanHo {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+.thanhToanHo .thanhtoanho-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.thanhToanHo .thanhtoanho-item h2 {
+  color: #5e3d92;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.thanhToanHo .thanhtoanho-item .tth {
+  margin-bottom: 10px;
+}
+.thanhToanHo .thanhtoanho-item .tth p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #666;
+}
+.thanhToanHo .thanhtoanho-item .tth .tth-input {
+  background-color: #eee;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 16px;
+  width: 100%;
+  border: 1px solid #5e3d92;
+}
+.thanhToanHo .thanhtoanho-item .tth .tth-input input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 1.4rem;
+}
+.thanhToanHo .thanhtoanho-item .tth .tth-date input {
+  padding: 4px 8px;
+  border-radius: 10px;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+}
+.thanhToanHo .thanhtoanho-item .tth-selec {
+  display: flex;
+  justify-content: space-between;
+}
+.thanhToanHo .thanhtoanho-item .tth-dd {
+  background-color: #eee;
+  border-radius: 10px;
+}
+.thanhToanHo .thanhtoanho-item .tth-dd button {
+  font-size: 1.8rem;
+  padding: 4px 8px;
+  min-width: 240px;
+}
+.thanhToanHo .thanhtoanho-item .tth-dd button::after {
+  margin-left: 16rem;
+}
+.thanhToanHo .thanhtoanho-item .tth-btn a {
+  background-color: #fdb04c;
+  padding: 7px 120px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.thanhToanHo .thanhtoanho-item .ttdh {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.thanhToanHo .thanhtoanho-item .ttdh div {
+  margin: auto 0;
+}
+.thanhToanHo .thanhtoanho-item .ttdh div i {
+  color: #fdb04c;
+  margin: 0 2px;
+}
+.thanhToanHo .thanhtoanho-item .ttdh div span {
+  margin: 0 10px;
+  font-weight: 500;
+}
+.thanhToanHo .thanhtoanho-item .ttdh div button {
+  background-color: #fdb04c;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border: none;
+  border-radius: 10px;
+}
+.thanhToanHo .thanhtoanho-item .ttdh div p {
+  text-align: center;
+  font-weight: 500;
+}
+.thanhToanHo .thanhtoanho-item .ttdh div p:first-child {
+  font-size: 1.4rem;
+  color: #666;
+}
+.thanhToanHo .thanhtoanho-item .ttdh div .huy {
+  background-color: #000;
+  padding: 2px 8px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.thanhtoan {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  display: none;
+}
+.thanhtoan h2 {
+  color: #5e3d92;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.thanhtoan div p {
+  font-size: 1.4rem;
+  margin: 0;
+  opacity: 0.8;
+}
+.thanhtoan .thanhtoan-content {
+  background-color: #eee;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.thanhtoan .thanhtoan-content sup {
+  color: #ff0000;
+}
+.thanhtoan .thanhtoan-content div {
+  display: flex;
+  margin-bottom: 20px;
+}
+.thanhtoan .thanhtoan-content div label {
+  margin-right: 30px;
+  margin-left: 22px;
+}
+.thanhtoan .thanhtoan-content div label button {
+  min-width: 240px;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.thanhtoan .thanhtoan-content div label input {
+  padding: 4px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+}
+.thanhtoan .thanhtoan-content div label input::-moz-placeholder {
+  padding: 0 6px;
+}
+.thanhtoan .thanhtoan-content div label input::placeholder {
+  padding: 0 6px;
+}
+.thanhtoan .thanhtoan-content div label #hinh {
+  max-width: 240px;
+}
+.thanhtoan .thanhtoan-content .ali-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.thanhtoan .yeucau-btn {
+  width: 100%;
+  border: 2px dashed #fdb04c;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 1.8rem;
+  color: #fdb04c;
+  font-weight: 500;
+}
+.thanhtoan .tigia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.thanhtoan .tigia div {
+  display: flex;
+  margin: 0 10px;
+}
+.thanhtoan .tigia div div {
+  display: block;
+}
+.thanhtoan .tigia div div p {
+  font-size: 1.8rem;
+  opacity: 1;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.thanhtoan .tigia div div p:last-child {
+  color: #5e3d92;
+}
+.thanhtoan .tigia button {
+  background-color: #fdb04c;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 80px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.sub-sidebar {
+  margin-top: 30px;
+}
+.sub-sidebar .sub-sidebar-item {
+  background-color: #eee;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.sub-sidebar .sub-sidebar-item div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+.sub-sidebar .sub-sidebar-item div img {
+  width: 32px;
+  margin-right: 5px;
+}
+.sub-sidebar .sub-sidebar-item div h3 {
+  margin: 0;
+}
+.sub-sidebar .sub-sidebar-item div i {
+  color: #5e3d92;
+  margin-right: 5px;
+}
+.sub-sidebar .sub-sidebar-item div p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.sub-sidebar .sub-sidebar-item a {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 999px;
+  width: 100%;
+  font-size: 1.4rem;
+}
+.sub-sidebar .sub-sidebar-item a i {
+  line-height: 100%;
+}
+.sub-sidebar .sub-noti div {
+  flex-direction: column;
+}
+.sub-sidebar .sub-noti .sub-noti-title {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sub-sidebar .sub-noti .sub-noti-title span {
+  background-color: #ff0000;
+  padding: 2px 5px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.sub-sidebar .sub-noti .sub-noti-title i {
+  font-size: 1.8rem;
+}
+.sub-sidebar .sub-noti ul {
+  width: 100%;
+}
+.sub-sidebar .sub-noti ul button {
+  color: #5e3d92;
+  font-size: 1.4rem;
+  border: none;
+}
+.sub-sidebar .sub-noti ul .nav-link.active {
+  background-color: #fff;
+}
+.sub-sidebar .sub-noti .tab-sidebar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.sub-sidebar .sub-noti .tab-sidebar .tab-sidebar-content {
+  flex-direction: row;
+  align-items: start;
+  font-weight: 500;
+}
+.sub-sidebar .sub-noti .tab-sidebar .tab-sidebar-content .tab-sidebar-icon {
+  font-size: 1.8rem;
+}
+.sub-sidebar .sub-noti .tab-sidebar .tab-sidebar-content .tab-sidebar-icon i {
+  margin: 0;
+  margin-left: 5px;
+}
+.sub-sidebar .sub-noti .tab-sidebar .tab-sidebar-content .tab-sidebar-item {
+  color: 1.4rem;
+  align-items: start;
+  margin-left: 4px;
+}
+.sub-sidebar .sub-noti .tab-sidebar .tab-sidebar-content .tab-sidebar-item .tab-sidebar-item-title {
+  margin-left: 10px;
+  align-items: start;
+  font-size: 0.8rem;
+  color: #5e3d92;
+}
+.sub-sidebar .sub-noti .tab-sidebar .tab-sidebar-content .tab-sidebar-item .tab-sidebar-item-content {
+  margin-left: 10px;
+}
+
+select#taodon {
+  padding: 4px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+}
+
+.ali {
+  display: none;
+}
+.ali.ali.active {
+  display: block;
+}
+
+.tab-dashboard.active {
+  display: block;
+}
+
+.sidebar-list.active {
+  background-color: #545454;
+}
+
+.tttk {
+  display: flex;
+}
+
+.taikhoan {
+  margin: 0 auto;
+  width: 60%;
+}
+.taikhoan li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.taikhoan li label {
+  font-weight: 500;
+}
+.taikhoan li div {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px 8px;
+  width: 400px;
+}
+
+.ptnaptien {
+  font-weight: 400;
+}
+.ptnaptien h4 {
+  color: #fdb04c;
+}
+.ptnaptien li {
+  margin-top: 10px;
+}
+.ptnaptien li p {
+  font-weight: 500;
+}
+.ptnaptien li:last-child {
+  display: flex;
+}
+.ptnaptien li:last-child img {
+  width: 300px;
+}/*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,247 @@
+
+
+
+@import "header";
+@import "mixins";
+@import "footer";
+// sec-banner
+
+.sec-banner {
+    padding-top: 60px;
+    background-image: url('https://www.pngmart.com/files/13/Pattern-Transparent-Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    .banner-content {
+        padding-top: 160px;
+        padding-left: 70px;
+        h1 {
+            font-size: $fs-1
+        }
+        h3 {
+            font-size: $fs-3;
+            opacity: 0.8;
+        }
+        p {
+            font-size: $fs-text;
+        }
+        div {
+            img:hover {
+                opacity: 0.6;
+                transform: scale(1.1);
+            }
+            img {
+                width: 200px;
+                transition: 0.2;
+            }
+        }
+        button:hover {
+            @include buttonHover();
+            padding-right: 80px;
+            i {
+                display: inline-block
+            }
+
+        } button{
+            @include buttomStyle();
+            font-size: $fs-3;
+            text-transform: uppercase;
+            padding: 10px 40px;
+            transition: padding-right 0.6s;
+            position: relative;
+            i {
+                display: none;
+                font-weight: 700;
+                text-align: end;
+                margin-right: 20px;
+                font-size: $fs-3;
+                line-height: 68px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        
+    }
+    .banner-img {
+        img {
+            width: 600px;
+            transform: translate(50px,30px);
+        }
+    }
+}
+// sec-partner
+.sec-partner {
+    background:  -webkit-linear-gradient(right, $main-color 0%, $sub-main-color 100%);
+    padding: 30px;
+    div {
+        div {
+            width: 40vw;
+            margin: 0 auto;
+            text-align: center;
+            h2 {
+                font-size: $fs-2;
+                font-weight: 500;
+                color: $white-color;
+            }
+        }
+        ul {
+            margin: 30px 0;
+            justify-content: center;
+            li:hover {
+                transform: scale(1.5);
+            } li {
+                transition: transform .4s;
+                margin: 0 30px;
+                a {
+                    img {
+                        width: 80px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// sec-quanli
+.sec-quanli {
+    margin-top: 60px;
+    // border-bottom: 1px solid $gray-color;
+    div {
+        margin-top: 60px;
+        div {
+            .sec-img {
+                
+                margin:auto 0;
+                img:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+                } img{
+                    transition: 0.4s;
+                    width: 630px;
+                }
+            }
+        }
+        .sec-content {
+            padding: 20px 0px 20px 10px;
+            h2 {
+                font-size: $fs-2;
+                font-weight: 700;
+                color: $text-color;
+                margin-bottom: 30px;
+                
+            }
+            .seccontent-item {
+                padding: 20px;
+            }
+            li {
+                font-size: $fs-text;
+                font-weight: 600;
+                padding: 30px;
+                padding-left: 10px;
+            }
+            p {
+                font-size: $fs-text;
+                color: $gray-text-color;
+                margin-bottom: 10px;
+                font-weight: 400;
+            }
+            button:hover {
+                @include buttonHover()
+            } 
+            button {
+                @include buttomStyle();
+                padding: 15px 40px;
+                font-size: $fs-text-medium;
+                i {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+   
+}
+
+
+.sec-visao {
+    margin-top: 60px;
+    .visao-title {
+        margin: 0 auto;
+        text-align: center;
+        h2  {
+            font-size: $fs-2;
+            font-weight: 700;
+        }
+        p {
+            font-size: $fs-3;
+            font-weight: 300;
+        }
+    }
+    div {
+        margin-top: 30px;
+        div {
+            .block-item {
+                color: $main-color;
+                text-align: center;
+                i {
+                    font-size: $fs-2;
+                }
+                .text-visao {
+                    font-size: $fs-2;
+                    font-weight: 500;
+                    margin:0;
+                    sup {
+                        left: -1rem;
+                    }
+                }
+            }
+            p {
+                font-size: $fs-text-medium;
+            }
+        }
+    }
+    .visao-img .why-img{
+        border-radius: 30px;
+        margin-top: 60px;
+    }
+}
+
+//gototop
+.ontop-btn { @include ontop-btn()
+}
+
+// sec-lienhe 
+.sec-lienhe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    h2 {
+        font-size: $fs-2;
+    }
+    p {
+        font-size: $fs-text
+    }
+    button {
+        @include buttomStyle();
+        font-size: $fs-text;
+        padding: 10px 30px ;
+        @include buttonHover()
+    }
+    h3 {
+        font-size: $fs-text;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    a {
+        font-size: $fs-3;
+        font-weight: 500;
+    }
+}
+
+
+//mb
+.mobile-menu {
+    display: none;
+}
